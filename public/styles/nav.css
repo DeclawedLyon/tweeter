@@ -1,0 +1,27 @@
+.navbar {
+  display: flex;
+  height: 120px;
+  background-color: #4056A1;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .title {
+  display: flex;
+  font-family: 'Bungee';
+  /* justify-content: flex-start; */
+  font-size: 30px;
+  padding-left: 1.5em;
+}
+.navbar .newTweet {
+  display:flex;  
+  /* justify-content: flex-end; */
+}
+.navbar .rightSide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 1.5em;
+}
+.navbar .rightSide .fa-angle-double-down {
+  color: red;
+}
