@@ -20,6 +20,55 @@ body {
   background-color: #f4f1ec;
   font-size: 24px;
 }
+.container {
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+  justify-content: center;
+  background-color: #f4f1ec;
+  color: black;
+
+}
+.content-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  /*
+  <div>
+  contains {
+    generic-question
+    content
+  }
+  </div>
+  <div>
+  contains {
+    tweet-submit
+    char-count
+  }
+  </div>
+  */
+
+}
+
+.generic-question {
+  display: flex;
+  font-family: 'Source Sans Pro';
+}
+.tweet-submit {
+  display: flex;
+  font-family: 'Bungee';
+  color: white;
+  background-color: rgb(33, 92, 219);
+  font-size: 80%;
+}
+.char-count {
+  display: flex;
+  font-family: 'Bungee';
+  color: rgb(85, 81, 81);
+  font-size: 80%;
+}
+
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions

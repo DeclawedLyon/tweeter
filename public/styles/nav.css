@@ -12,16 +12,16 @@
   font-size: 30px;
   padding-left: 1.5em;
 }
-.navbar .newTweet {
-  display:flex;  
-  /* justify-content: flex-end; */
-}
 .navbar .rightSide {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   padding-right: 1.5em;
 }
 .navbar .rightSide .fa-angle-double-down {
   color: red;
+}
+.navbar .rightSide p {
+  margin: 0;
 }

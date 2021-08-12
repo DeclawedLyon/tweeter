@@ -1,0 +1,30 @@
+header {
+  height: 400px;
+  width: 100%;
+  background-color: #00b0c7;
+  background-image: url("https://www.transparenttextures.com/patterns/dark-stripes-light.png");
+}
+
+/* .avatar {
+  background-color: black; 
+} */
+
+.avatar-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-name {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.header-name {
+  color:brown
+}
+
+.interactables {
+  display: flex;
+  justify-content: space-between;
+}
