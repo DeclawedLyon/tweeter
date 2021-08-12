@@ -24,7 +24,7 @@ header {
   color:brown
 }
 
-.interactables {
+#interactables {
   display: flex;
   justify-content: space-between;
 }

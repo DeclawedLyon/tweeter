@@ -27,13 +27,15 @@ body {
   justify-content: center;
   background-color: #f4f1ec;
   color: black;
-
+  
 }
 .content-container {
   display: flex;
   width: 100%;
   flex-direction: column;
   justify-content: flex-start;
+  border: 2px solid black;
+  border-radius: 15px;
   /*
   <div>
   contains {
@@ -51,11 +53,11 @@ body {
 
 }
 
-.generic-question {
+#generic-question {
   display: flex;
   font-family: 'Source Sans Pro';
 }
-.tweet-submit {
+#submit-tweet {
   display: flex;
   font-family: 'Bungee';
   color: white;
@@ -68,6 +70,30 @@ body {
   color: rgb(85, 81, 81);
   font-size: 80%;
 }
+.danger {
+  color: red;
+
+}
+#input-field {
+  display: flex;
+  width: 100%;
+  background-color: #f4f1ec;
+  margin-bottom: 5px;  
+  /* border-radius: ; */
+}
+.newTweet {
+  display: flex;
+  background-color: black;
+  margin-bottom: 50px;
+}
+#input-label {
+  display: flex;
+  font-family: 'Bungee';
+  margin-bottom: 1.5em;
+  margin-top: 5px;
+}
+
+
 
 
 /*
