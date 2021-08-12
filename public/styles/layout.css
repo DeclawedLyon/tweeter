@@ -86,8 +86,6 @@ body {
 }
 .newTweet {
   display: flex;
-  background-color: black;
-  margin-bottom: 50px;
 }
 #input-label {
   display: flex;
@@ -95,55 +93,7 @@ body {
   margin-bottom: 1.5em;
   margin-top: 5px;
 }
-#tweets-container {
-  display: flex;
-  border: 2px solid black;
-  flex-direction: column;
-  border-radius: 15px;
-  margin-top: 10px;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 5px;
-}
- #tweets-container > article {
-   display: flex;
-   color: red;
-   margin-left: 5px;
- }
- #old-tweet-text {
-   display: flex;
-   flex-direction: column;
-   width: 98%;
-   border: 2px solid purple;
-   border-radius: 15px;
- }
- #old-tweet-text > header {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   border-bottom: 2px solid black;
-   padding-top: 2px;
-   padding-bottom: 2px;
- }
- .avatar-location {
-   display: flex;
-   justify-content: row;
-   align-items: center;
- }
- #engagement-container {
-   display: flex;
-   border: 2px solid pink;
-   justify-content: space-between;
- }
-.fas.fa-user-astronaut {
-  display: flex;
-  font-size: 2em;
-  justify-content: center;
-  align-items: center;
-  color: green;
-  padding-right: 5px;
-  padding-left: 2px;
-}
+
 
 
 /*
