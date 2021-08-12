@@ -1,9 +1,27 @@
+#tweets-container {
+  display: flex;
+  border: 2px solid black;
+  flex-direction: column;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+ #tweets-container > article {
+   display: flex;
+   margin-left: 5px;
+   margin-top: 5px;
+ }
 #old-tweet-text {
   display: flex;
   flex-direction: column;
   width: 98%;
   border: 2px solid purple;
   border-radius: 15px;
+}
+#old-tweet-text:hover {
+  border: 2px solid pink;
 }
 #old-tweet-text > header {
   display: flex;
@@ -18,11 +36,7 @@
   justify-content: row;
   align-items: center;
 }
-#engagement-container {
-  display: flex;
-  border: 2px solid pink;
-  justify-content: space-between;
-}
+
 .fas.fa-user-astronaut {
  display: flex;
  font-size: 2em;
