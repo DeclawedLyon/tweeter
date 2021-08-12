@@ -63,12 +63,14 @@ body {
   color: white;
   background-color: rgb(33, 92, 219);
   font-size: 80%;
+  margin-left: 5px;
 }
 .char-count {
   display: flex;
   font-family: 'Bungee';
   color: rgb(85, 81, 81);
   font-size: 80%;
+  margin-right: 5px;
 }
 .danger {
   color: red;
@@ -76,9 +78,10 @@ body {
 }
 #input-field {
   display: flex;
-  width: 100%;
+  width: 97%;
   background-color: #f4f1ec;
-  margin-bottom: 5px;  
+  margin-bottom: 5px; 
+  margin-left: 5px; 
   /* border-radius: ; */
 }
 .newTweet {
@@ -92,8 +95,55 @@ body {
   margin-bottom: 1.5em;
   margin-top: 5px;
 }
-
-
+#tweets-container {
+  display: flex;
+  border: 2px solid black;
+  flex-direction: column;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+ #tweets-container > article {
+   display: flex;
+   color: red;
+   margin-left: 5px;
+ }
+ #old-tweet-text {
+   display: flex;
+   flex-direction: column;
+   width: 98%;
+   border: 2px solid purple;
+   border-radius: 15px;
+ }
+ #old-tweet-text > header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 2px solid black;
+   padding-top: 2px;
+   padding-bottom: 2px;
+ }
+ .avatar-location {
+   display: flex;
+   justify-content: row;
+   align-items: center;
+ }
+ #engagement-container {
+   display: flex;
+   border: 2px solid pink;
+   justify-content: space-between;
+ }
+.fas.fa-user-astronaut {
+  display: flex;
+  font-size: 2em;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  padding-right: 5px;
+  padding-left: 2px;
+}
 
 
 /*

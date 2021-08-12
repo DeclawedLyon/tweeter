@@ -36,7 +36,7 @@
       </div>
 
     </nav>
-    <header>
+    <header class="profile-header">
       <div class="avatar-div">
           <img class="avatar" src="/images/profile-hex.png"> 
       </div>
@@ -52,7 +52,6 @@
         <h2>Compose Tweet</h2>
         <div class="content-container">
           <form method="POST" action="/tweets/">
-            
             <div>
               <label for="input-field" id="input-label" >What are you humming about?</label>
               <input name="text" id="input-field">
@@ -62,6 +61,40 @@
               <output name = counter class="char-count" for="input-field">128</output>
             </div>
           </form>
+          <div id="tweets-container">
+            <article id="old-tweet-text">
+              <header>
+                <div class="avatar-location">
+                  <i class="fas fa-user-astronaut"></i> <!--astronaut icon-->
+                  <span>profile name</span>
+                </div>
+                <div>
+                  <i class="fas fa-at"></i>
+                  <span>userID</span>
+                </div>
+              </header>
+              <footer class="article-text">
+                <h2>Title</h2>
+                <p>Some text here...</p>
+              </footer>
+            </article>
+            <div>
+              <div id="engagement-container">
+                <span>age of post</span>
+                <div class="engagement-buttons">
+                  <i class="fas fa-flag"></i>
+                  <i class="fas fa-retweet"></i>
+                  <i class="fas fa-heart"></i>
+                </div>
+              </div>
+              <!-- /////////////////////////////////////// -->
+              <i class="fas fa-user-nurse"></i>
+              <i class="fas fa-user-ninja"></i>
+              <i class="fas fa-user-md"></i>
+              <i class="fas fa-user-injured"></i>
+              <i class="fas fa-user-graduate"></i>
+            </div>
+          </div>
         </div>
       </section>
     </main>

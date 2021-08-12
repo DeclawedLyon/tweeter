@@ -1,4 +1,4 @@
-header {
+.profile-header {
   height: 400px;
   width: 100%;
   background-color: #00b0c7;
@@ -21,7 +21,8 @@ header {
   /* align-items: center; */
 }
 .header-name {
-  color:brown
+  color:brown;
+  margin: 0;
 }
 
 #interactables {
