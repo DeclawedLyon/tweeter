@@ -21,9 +21,9 @@
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <!-- App JS -->
+    <!-- App JS
     <script type="text/javascript" src="/scripts/client.js"></script>
-    <script type="text/javascript" src="scripts/composer-char-counter.js"></script>
+    <script type="text/javascript" src="scripts/composer-char-counter.js"></script> -->
   </head>
 
   <body>
@@ -38,6 +38,7 @@
       </div>
 
     </nav>
+    <div class="spacer"></div>
     <header class="profile-header">
       <div class="avatar-div">
           <img class="avatar" src="/images/profile-hex.png"> 
@@ -51,23 +52,25 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
+        <!--Section for Posting New Tweet-->
         <h2>Compose Tweet</h2>
-        <div class="content-container">
+        <div id="content-container">
           <form method="POST" action="/tweets/">
             <div>
-              <label for="input-field" id="input-label" >What are you humming about?</label>
-              <input name="text" id="input-field">
+              <label for="tweet-text" id="input-label" >What are you humming about?</label>
+              <textarea name="text" id="tweet-text"></textarea>
             </div>
             <div id="interactables">
               <button id="submit-tweet" type="submit">TWEET</button>
-              <output name = counter class="char-count" for="input-field">128</output>
+              <output name = counter class="char-count" for="tweet-text">128</output>
             </div>
           </form>
+          <!--Section to Display Tweets-->
           <div id="tweets-container">
             <article id="old-tweet-text">
               <header>
                 <div class="avatar-location">
-                  <i class="fas fa-user-astronaut"></i> <!--astronaut icon-->
+                  <i class="fas fa-user-astronaut"></i>
                   <span>profile name</span>
                 </div>
                 <div>
@@ -76,7 +79,7 @@
                 </div>
               </header>
               <footer class="article-text">
-                <h2>Title</h2>
+                <!-- <h2>Title</h2> -->
                 <p>Some text here...</p>
               </footer>
             </article>
@@ -89,16 +92,14 @@
                   <i class="fas fa-heart"></i>
                 </div>
               </div>
-              <!-- /////////////////////////////////////// -->
-              <i class="fas fa-user-nurse"></i>
-              <i class="fas fa-user-ninja"></i>
-              <i class="fas fa-user-md"></i>
-              <i class="fas fa-user-injured"></i>
-              <i class="fas fa-user-graduate"></i>
             </div>
           </div>
         </div>
       </section>
     </main>
   </body>
+
+  <!-- App JS -->
+  <script type="text/javascript" src="/scripts/client.js"></script>
+  <script type="text/javascript" src="scripts/composer-char-counter.js"></script>
 </html>

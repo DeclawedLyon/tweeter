@@ -1,18 +1,21 @@
 #engagement-container {
   display: flex;
-  border: 2px solid pink;
   justify-content: space-between;
 }
 .fas.fa-flag:hover {
+  padding-top: 5px;
   color: rgb(90, 102, 24);
 }
 .fas.fa-retweet:hover {
+  padding-top: 5px;
   color:rgb(25, 92, 97);
 }
 .fas.fa-heart:hover {
+  padding-top: 5px;
   color:rgb(201, 45, 45);
 }
 #engagement-container > span {
   color:rgb(77, 74, 74);
   padding-left: 10px;
+  padding-bottom: 5px;
 }

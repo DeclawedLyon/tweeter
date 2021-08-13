@@ -29,7 +29,7 @@ body {
   color: black;
   
 }
-.content-container {
+#content-container {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -76,13 +76,16 @@ body {
   color: red;
 
 }
-#input-field {
+#tweet-text {
   display: flex;
   width: 97%;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
   background-color: #f4f1ec;
   margin-bottom: 5px; 
   margin-left: 5px; 
-  /* border-radius: ; */
+
 }
 .newTweet {
   display: flex;
