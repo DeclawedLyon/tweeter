@@ -17,11 +17,14 @@
   display: flex;
   flex-direction: column;
   width: 98%;
-  border: 2px solid purple;
+  border: 2px solid rgb(10, 92, 139);
   border-radius: 15px;
 }
 #old-tweet-text:hover {
-  border: 2px solid pink;
+  border: 4px solid rgb(53, 124, 165);
+  border-left: 2px solid rgb(10, 92, 139);
+  border-top: 2px solid rgb(10, 92, 139);
+  
 }
 #old-tweet-text > header {
   display: flex;
@@ -46,14 +49,60 @@
  padding-right: 5px;
  padding-left: 2px;
 }
+.fas.fa-user-graduate {
+ display: flex;
+ font-size: 2em;
+ justify-content: center;
+ align-items: center;
+ color: green;
+ padding-right: 5px;
+ padding-left: 2px;
+}
+.fas.fa-user-injure {
+ display: flex;
+ font-size: 2em;
+ justify-content: center;
+ align-items: center;
+ color: green;
+ padding-right: 5px;
+ padding-left: 2px;
+}
+.fas.fa-user-md {
+  display: flex;
+  font-size: 2em;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  padding-right: 5px;
+  padding-left: 2px;
+ }
+.fas.fa-user-nurse {
+  display: flex;
+  font-size: 2em;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  padding-right: 5px;
+  padding-left: 2px;
+}
+.fas.fa-user-ninja {
+  display: flex;
+  font-size: 2em;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  padding-right: 5px;
+  padding-left: 2px;
+}
 
 
 
 
 
-
-/* <i class="fas fa-user-nurse"></i>
-<i class="fas fa-user-ninja"></i>
-<i class="fas fa-user-md"></i>
-<i class="fas fa-user-injured"></i>
-<i class="fas fa-user-graduate"></i> */
+/* 
+<i class='fas fa-user-nurse'></i>
+<i class='fas fa-user-ninja'></i>
+<i class='fas fa-user-md'></i>
+<i class='fas fa-user-injured'></i>
+<i class='fas fa-user-graduate'></i> 
+*/

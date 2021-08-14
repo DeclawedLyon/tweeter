@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="/styles/tweet-footer.css" type="text/css">
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- App JS
     <script type="text/javascript" src="/scripts/client.js"></script>
@@ -54,20 +55,20 @@
       <section class="new-tweet">
         <!--Section for Posting New Tweet-->
         <h2>Compose Tweet</h2>
+        <form>
+          <div>
+            <label for="tweet-text" id="input-label" >What are you humming about?</label>
+            <textarea name="text" id="tweet-text"></textarea>
+          </div>
+          <div id="interactables">
+            <button id="submit-tweet" type="submit">TWEET</button>
+            <output name = counter class="char-count" for="tweet-text">128</output>
+          </div>
+        </form>
         <div id="content-container">
-          <form method="POST" action="/tweets/">
-            <div>
-              <label for="tweet-text" id="input-label" >What are you humming about?</label>
-              <textarea name="text" id="tweet-text"></textarea>
-            </div>
-            <div id="interactables">
-              <button id="submit-tweet" type="submit">TWEET</button>
-              <output name = counter class="char-count" for="tweet-text">128</output>
-            </div>
-          </form>
           <!--Section to Display Tweets-->
           <div id="tweets-container">
-            <article id="old-tweet-text">
+            <!-- <article id="old-tweet-text">
               <header>
                 <div class="avatar-location">
                   <i class="fas fa-user-astronaut"></i>
@@ -79,7 +80,7 @@
                 </div>
               </header>
               <footer class="article-text">
-                <!-- <h2>Title</h2> -->
+                <h2>Title</h2> 
                 <p>Some text here...</p>
               </footer>
             </article>
@@ -92,7 +93,7 @@
                   <i class="fas fa-heart"></i>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>

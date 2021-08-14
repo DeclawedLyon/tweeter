@@ -19,3 +19,8 @@
   padding-left: 10px;
   padding-bottom: 5px;
 }
+#tweets-container > div {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+}

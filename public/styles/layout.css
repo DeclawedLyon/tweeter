@@ -36,21 +36,6 @@ body {
   justify-content: flex-start;
   border: 2px solid black;
   border-radius: 15px;
-  /*
-  <div>
-  contains {
-    generic-question
-    content
-  }
-  </div>
-  <div>
-  contains {
-    tweet-submit
-    char-count
-  }
-  </div>
-  */
-
 }
 
 #generic-question {
