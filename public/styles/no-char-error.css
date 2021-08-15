@@ -1,0 +1,13 @@
+#no-char-error {
+  display: none;
+  width: 100%;
+  border: red solid 2px;
+  border-radius: 5px;
+  color: red;
+}
+#no-char-message {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+}

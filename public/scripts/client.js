@@ -22,7 +22,7 @@ $(document).ready(function () {
       }
     });
   }
-
+  // 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
   const createTweetElement = function (tweetObject) {
     let date = timeago.format(tweetObject.createdAt);
     let $tweet = `<div id="tweets-container">
@@ -33,7 +33,7 @@ $(document).ready(function () {
           <span>${tweetObject.userName}</span>
         </div>
         <div>
-          <i class="fas fa-at"></i>
+         
           <span>${tweetObject.userHandle}</span>
         </div>
       </header>
@@ -61,6 +61,7 @@ $(document).ready(function () {
   const renderTweets = function (tweets) {
     // loops through tweets
     $contentContainer.empty();
+    tweets.reverse();
     for (const object of tweets) {
       // console.log("the tweets[object] is:", tweets[object]);
       const tweetObject = {
@@ -82,12 +83,21 @@ $(document).ready(function () {
   $('form').on('submit', function(event) {
     event.preventDefault();
     const user = "james";
-    const $tweetInput = $('tweet-text');
-    console.log($(this))
     const urlEncoded = $(this).serialize();
-    console.log("---", urlEncoded)
+    const $tweetInput = $('#tweet-text' );
+    const newVal = $tweetInput.val();
+    const textLength = newVal.length;
 
-    $.post('/tweets',urlEncoded).then(loadTweets);
+    if (textLength > 140) {
+      $("#error-popup").slideToggle(function(){
+      });
+    } else if ($tweetInput.val() === '') {
+      $("#no-char-error").slideToggle(function(){
+      });
+    } else {
+      const urlEncoded = $(this).serialize();
+      $.post('/tweets',urlEncoded).then(loadTweets);
+    }
 
   });
 })

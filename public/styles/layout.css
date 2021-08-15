@@ -17,25 +17,57 @@ html {
 body {
   font-family: 'Source Sans Pro', "sans-serif";
   color: #FFFF;
+  /* color: black; */
   background-color: #f4f1ec;
   font-size: 24px;
 }
 .container {
-  display: flex;
-  width: 90%;
-  margin-left: 5%;
-  justify-content: center;
-  background-color: #f4f1ec;
   color: black;
-  
 }
-#content-container {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  justify-content: flex-start;
-  border: 2px solid black;
-  border-radius: 15px;
+@media only screen and (min-width: 900px) {
+
+  .content-area {
+    display: flex;
+  }
+  .profile-header.profile-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    position: sticky;
+    top: 120px;
+    height: 100vh;
+  }
+  .container {
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    justify-content: center;
+    background-color: #f4f1ec;
+    color: black;
+    
+  }
+  #content-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 2px solid black;
+    border-radius: 15px;
+  }
+   body > header {
+    display: flex;
+    transform: translateX(-15vw) translateY(25vh);
+    border: orchid 10px solid;
+    flex-direction: column;
+    height: 70%;
+  }
+  .container {
+    display: flex;
+    width: 100%;
+    border: darkslategrey 15px solid;
+    /* border-top: 100px; */
+  }
 }
 
 #generic-question {
@@ -80,6 +112,14 @@ body {
   font-family: 'Bungee';
   margin-bottom: 1.5em;
   margin-top: 5px;
+}
+#compose-tweet {
+  border: 2px black solid;
+  border-radius: 15px;
+}
+.article-text * {
+  max-width: 60rem;
+  word-break: break-all;
 }
 
 
