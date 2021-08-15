@@ -22,6 +22,18 @@ $(document).ready(function () {
       }
     });
   }
+  const generateRandomAvatar = () => {
+    const rndInt = Math.floor(Math.random() * 4) +1
+    const avatars = [
+    "<i class='fas fa-user-nurse'></i>",
+    "<i class='fas fa-user-ninja'></i>",
+    "<i class='fas fa-user-md'></i>",
+    "<i class='fas fa-user-injured'></i>",
+    "<i class='fas fa-user-graduate'></i>" 
+  ]
+  return avatars[rndInt];
+  }
+  
   // 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
   const createTweetElement = function (tweetObject) {
     let date = timeago.format(tweetObject.createdAt);
@@ -29,7 +41,7 @@ $(document).ready(function () {
     <article id="old-tweet-text">
       <header>
         <div class="avatar-location">
-          ${tweetObject.userAvatar}
+          ${generateRandomAvatar()}
           <span>${tweetObject.userName}</span>
         </div>
         <div>
