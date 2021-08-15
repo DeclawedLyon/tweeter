@@ -19,3 +19,7 @@ This repository is the starter code for the project: Students will fork and clon
 - chance
 - md5
 - nodemon
+
+!["Desktop screenshot"](https://github.com/DeclawedLyon/tweeter/blob/master/docs/Screen%20Shot%202021-08-15%20at%205.23.32%20PM.png)
+!["Mobile Profile screenshot"](https://github.com/DeclawedLyon/tweeter/blob/master/docs/Screen%20Shot%202021-08-15%20at%205.23.45%20PM.png)
+!["Mobile Tweets screenshot"](https://github.com/DeclawedLyon/tweeter/blob/master/docs/Screen%20Shot%202021-08-15%20at%205.23.53%20PM.png)
