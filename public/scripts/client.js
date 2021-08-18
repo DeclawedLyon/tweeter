@@ -7,9 +7,8 @@
 $(document).ready(function () {
   const $contentContainer = $("#content-container");
 
+  // load tweets from server/data-files/initial-tweets.json database
   const loadTweets = () => {
-    // renderTweets(tweetData);
-
     $.ajax({
       url: '/tweets',
       method: 'GET',
@@ -22,6 +21,8 @@ $(document).ready(function () {
       }
     });
   }
+
+  // generate an avatar for each user post
   const generateRandomAvatar = () => {
     const rndInt = Math.floor(Math.random() * 4) +1
     const avatars = [
@@ -33,8 +34,15 @@ $(document).ready(function () {
   ]
   return avatars[rndInt];
   }
+
+  // escape function to protect server from user input
+  const escape = function(str) {
+    let div = document.createElement("p");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
   
-  // 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
+  // function to create each tweet element to be displayed on the page
   const createTweetElement = function (tweetObject) {
     let date = timeago.format(tweetObject.createdAt);
     let $tweet = `<div id="tweets-container">
@@ -50,7 +58,7 @@ $(document).ready(function () {
         </div>
       </header>
       <footer class="article-text">
-        <p>${tweetObject.tweetContent}</p>
+        <p>${escape(tweetObject.tweetContent)}</p>
       </footer>
     </article>
     <div>
@@ -69,7 +77,7 @@ $(document).ready(function () {
     return $tweet;
   }
 
-  // const $tweet = $(`<article class="tweet">Hello world</article>`);
+  // function to display each created tweet element on the page 
   const renderTweets = function (tweets) {
     // loops through tweets
     $contentContainer.empty();
@@ -89,27 +97,38 @@ $(document).ready(function () {
       $contentContainer.append(newTweetTemplate)
     }
   }
-
   loadTweets();
 
+  // when 'submit' button is clicked or user hits 'enter':
   $('form').on('submit', function(event) {
+    //prevent the page from reloading
     event.preventDefault();
-    const user = "james";
-    const urlEncoded = $(this).serialize();
+
     const $tweetInput = $('#tweet-text' );
     const newVal = $tweetInput.val();
     const textLength = newVal.length;
 
+    // test if user input is over 140 chars 
     if (textLength > 140) {
+      // show error popup 
       $("#error-popup").slideToggle(function(){
-      });
-    } else if ($tweetInput.val() === '') {
+        // clear error popup after 3 seconds
+      }).delay(3000).slideToggle(function(){});
+      
+    } 
+    // test if user input is empty string
+    else if ($tweetInput.val() === '') {
+      // show error popup 
       $("#no-char-error").slideToggle(function(){
-      });
-    } else {
+        // clear error popup after 3 seconds
+      }).delay(3000).slideToggle(function(){});
+    } 
+    // if no errors, post the tweet.
+    else {
       const urlEncoded = $(this).serialize();
+      $("#tweet-text").val('')
+      $('.char-count').val(140);
       $.post('/tweets',urlEncoded).then(loadTweets);
     }
-
   });
 })

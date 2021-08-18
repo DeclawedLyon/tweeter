@@ -1,3 +1,4 @@
+/* style controls for tweet header and tweet avaters */
 #tweets-container {
   display: flex;
   border: 2px solid black;

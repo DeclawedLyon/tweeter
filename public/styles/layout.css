@@ -1,29 +1,71 @@
-/*
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
- * https://css-tricks.com/international-box-sizing-awareness-day/
- * Do not modify these two selectors, please
- */
+/* styles for the overall layout of the tweets homepage */
 html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
-/*
- * Global layout stuff
- */
-
 body {
   font-family: 'Source Sans Pro', "sans-serif";
   color: #FFFF;
-  /* color: black; */
   background-color: #f4f1ec;
   font-size: 24px;
 }
 .container {
   color: black;
 }
+#generic-question {
+  display: flex;
+  font-family: 'Source Sans Pro';
+}
+#submit-tweet {
+  display: flex;
+  font-family: 'Bungee';
+  color: white;
+  background-color: rgb(33, 92, 219);
+  font-size: 80%;
+  margin-left: 5px;
+}
+.char-count {
+  display: flex;
+  font-family: 'Bungee';
+  color: rgb(85, 81, 81);
+  font-size: 80%;
+  margin-right: 5px;
+}
+.danger {
+  color: red;
+
+}
+#tweet-text {
+  display: flex;
+  width: 97%;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  background-color: #f4f1ec;
+  margin-bottom: 5px; 
+  margin-left: 5px; 
+}
+.newTweet {
+  display: flex;
+}
+#input-label {
+  display: flex;
+  font-family: 'Bungee';
+  margin-bottom: 1.5em;
+  margin-top: 5px;
+}
+#compose-tweet {
+  border: 2px black solid;
+  border-radius: 15px;
+}
+.article-text * {
+  max-width: 60rem;
+  word-break: break-all;
+}
+
+/* style control for desktop view */
 @media only screen and (min-width: 900px) {
 
   .content-area {
@@ -66,64 +108,5 @@ body {
     display: flex;
     width: 100%;
     border: darkslategrey 15px solid;
-    /* border-top: 100px; */
   }
 }
-
-#generic-question {
-  display: flex;
-  font-family: 'Source Sans Pro';
-}
-#submit-tweet {
-  display: flex;
-  font-family: 'Bungee';
-  color: white;
-  background-color: rgb(33, 92, 219);
-  font-size: 80%;
-  margin-left: 5px;
-}
-.char-count {
-  display: flex;
-  font-family: 'Bungee';
-  color: rgb(85, 81, 81);
-  font-size: 80%;
-  margin-right: 5px;
-}
-.danger {
-  color: red;
-
-}
-#tweet-text {
-  display: flex;
-  width: 97%;
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  background-color: #f4f1ec;
-  margin-bottom: 5px; 
-  margin-left: 5px; 
-
-}
-.newTweet {
-  display: flex;
-}
-#input-label {
-  display: flex;
-  font-family: 'Bungee';
-  margin-bottom: 1.5em;
-  margin-top: 5px;
-}
-#compose-tweet {
-  border: 2px black solid;
-  border-radius: 15px;
-}
-.article-text * {
-  max-width: 60rem;
-  word-break: break-all;
-}
-
-
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */

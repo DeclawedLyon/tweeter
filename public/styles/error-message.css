@@ -1,3 +1,4 @@
+/* styles for the error pop if user input is over 140 characters*/
 #error-popup {
   display: none;
   width: 100%;

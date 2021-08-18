@@ -1,10 +1,10 @@
+/* style controls for navbar at top of tweeter webpage */
 .navbar {
   display: flex;
   height: 120px;
   width: 100%;
   z-index: 1;
   position: fixed;
-  /* top: -120px; */
   background-color: #4056A1;
   justify-content: space-between;
   align-items: center;
